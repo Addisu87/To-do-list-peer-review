@@ -1,0 +1,219 @@
+:root {
+  --primary: #3d3d29;
+  --blue: #3a82ee;
+  --light: #eee;
+  --white: #fff;
+  --grey: #888;
+  --dark: #313154;
+  --danger: #f41e1b;
+  --success: rgb(29, 186, 29);
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --dark-blue: 0 0 4px rgba(58, 130, 238, 0.75);
+  --pink: #ec4899;
+  --purple: #8b5cf6;
+}
+
+/* End of Variables */
+
+/* Resets */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'montserrat', sans-serif;
+  overflow: hidden;
+}
+
+input:not([type='radio']):not([type='checkbox']),
+button {
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+  cursor: initial;
+}
+
+/* End of Resets */
+
+body {
+  background: var(--light);
+  color: var(--dark);
+}
+
+section {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+h3 {
+  color: var(--dark);
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+h4 {
+  color: var(--grey);
+  font-size: 0.875rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.create-todo input[type='text'] {
+  display: block;
+  width: 100%;
+  font-size: 1.125rem;
+  padding: 1rem 1.5rem;
+  color: var(--dark);
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow);
+  margin-bottom: 1.5rem;
+}
+
+.create-todo .alert-success {
+  color: var(--success);
+}
+
+.create-todo .alert-danger {
+  color: var(--danger);
+}
+
+input[type='radio'],
+input[type='checkbox'] {
+  display: none;
+}
+
+.bubble {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 999px;
+  border: 2px solid var(--blue);
+  box-shadow: var(--dark-blue);
+}
+
+.bubble::after {
+  content: '';
+  display: block;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  background-color: var(--blue);
+  box-shadow: var(--dark-blue);
+  border-radius: 999px;
+  transition: 0.2s ease-in-out;
+}
+
+input:checked ~ .bubble::after {
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+}
+
+.create-todo input[type='submit'] {
+  display: block;
+  width: 100%;
+  font-size: 1.125rem;
+  padding: 1rem 1.5rem;
+  color: var(--pink);
+  background-image: linear-gradient(to right, var(--pink), var(--purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.4s ease-out;
+}
+
+.create-todo input[type='submit']:hover {
+  opacity: 0.8;
+}
+
+.create-todo input[type='submit']:active {
+  opacity: 0.6;
+}
+
+.todo-list .list {
+  margin: 1rem 0;
+}
+
+.todo-list .todo-item {
+  display: flex;
+  align-items: center;
+  background-color: var(--white);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow);
+  margin-bottom: 1rem;
+}
+
+.todo-item label {
+  display: block;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+.todo-item .todo-content {
+  flex: 1 1 0%;
+}
+
+.todo-item .todo-content input {
+  color: var(--dark);
+  font-size: 1.125rem;
+}
+
+.todo-item .actions {
+  display: flex;
+  align-items: center;
+}
+
+.todo-item .actions button {
+  display: block;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  color: var(--white);
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+
+.todo-item .actions button:hover {
+  opacity: 0.75;
+}
+
+.todo-item .actions .edit {
+  margin-right: 0.5rem;
+  background-image: linear-gradient(to right, var(--pink), var(--purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.todo-item .actions .delete {
+  color: var(--danger);
+}
+
+#completed button {
+  display: block;
+  width: 100%;
+  font-size: 1.125rem;
+  padding: 1rem 1.5rem;
+  color: var(--pink);
+  background-image: linear-gradient(to right, var(--pink), var(--purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.2s ease-out;
+}
+
+.todo-item.done .todo-content input {
+  text-decoration: line-through;
+  color: var(--grey);
+}
