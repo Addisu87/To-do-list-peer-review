@@ -115,7 +115,7 @@ const showAlert = (message, className) => {
 
 window.addEventListener('load', () => {
   const todos = (JSON.parse(localStorage.getItem('todos')) || []).filter(
-    (todo) => todo.content !== ''
+    (todo) => todo.content !== '',
   );
   const newTodoForm = document.querySelector('#new-todo-form');
 
@@ -125,7 +125,7 @@ window.addEventListener('load', () => {
     const todo = {
       content: e.target.elements.content.value,
       done: false,
-      createdAt: new Date().getTime()
+      createdAt: new Date().getTime(),
     };
 
     // Validate
