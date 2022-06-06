@@ -1,66 +1,55 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# To-Do list
 
-> Description the project.
-
+> A todo list application that includes adding a new list and deleting the unwanted list.
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML 5
+- CSS 3
+- JavaScript Vanilla
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
-
+[Live Demo Link](https://addisu87.github.io/To-do-list/dist/)
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
+- To get a local copy up and running follow these simple example step.
 
 ### Prerequisites
 
-### Setup
+- ECMA Script compatible web browsers
+
+
+- First clone the repository using the following command: git clone git@github.com:Addisu87/To-do-list.git
 
 ### Install
 
+- npm package
+
 ### Usage
 
-### Run tests
-
-### Deployment
-
-
+- npm run build
+- npm start
 
 ## Authors
 
-👤 **Author1**
+👤 **Addisu Haile**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [Addisu87](https://github.com/Addisu87)
+- Twitter: [@AddisuTedla](https://twitter.com/AddisuTedla)
+- LinkeIn: [Addisu Tedla](https://www.linkedin.com/in/addisu-tedla-8b4a10143/)
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome!
+- Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/Addisu87/To-do-list/issues).
 
 ## Show your support
 
-Give a ⭐️ if you like this project!
+- Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
@@ -70,4 +59,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](./MIT.md) licensed.
+- This project is [MIT](./MIT.md) licensed.
